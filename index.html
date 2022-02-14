@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Quintessential&family=Titillium+Web:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="header">
+      <div class="navbar">
+        <nav class="nav-1" id="navlar">
+          <ul id="ular">
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Our Tents</a></li>
+          </ul>
+        </nav>
+        <nav class="nav-2" id="navlar">
+          <ul id="ularu">
+            <li><a href="" id="alar">Stories</a></li>
+            <li><a href="" id="alar">Booking</a></li>
+            <li><a href="" id="alar">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <img
+        src="img/menu-icon-19353.png"
+        class="menu-icon"
+        onclick="menutoggle()"
+      />
+      <div class="header-title">
+        <h1 id="zmk">ZMK</h1>
+        <h4 id="zmktitle">Tourism Center</h4>
+      </div>
+    </div>
+
+    <!-- WELCOME -->
+
+    <div class="welcome">
+      <div class="container">
+        <h2>Welcome To</h2>
+        <h1>ZMK Tourism Center</h1>
+        <p>
+          Zmk Provides memorable outdoor glamping experience for festivals,
+          weddings, corporate events, camping trips... and everything in
+          beetwen! The only limit is your imagionation...
+        </p>
+      </div>
+    </div>
+
+    <!-- PITCH -->
+
+    <div class="pitch">
+      <div class="container">
+        <h1 class="pitch-title">How To Travel</h1>
+        <div class="pitch-plan">
+          <p>
+            Every great adventure requires planning - luckily it couldn't be
+            easier. Follow our easy steps to start planning your event.<br />
+            Happy (and luxurious) traveling!
+          </p>
+        </div>
+        <h1 class="pitch-title">Three Easy Steps</h1>
+        <div class="row">
+          <div class="col-3">
+            <img src="img/CheckList.png" />
+            <h2>Step 1</h2>
+            <p>Tell Us What You Need</p>
+          </div>
+          <div class="col-3">
+            <img src="img/Map.png" />
+            <h2>Step 2</h2>
+            <p>Tell Us Where You Want It</p>
+          </div>
+          <div class="col-3">
+            <img src="img/SitBack.png" />
+            <h2>Step 3</h2>
+            <p>We'll handle the rest</p>
+          </div>
+        </div>
+        <a href="" class="btn">START BOOKING</a>
+      </div>
+    </div>
+
+    <!-- POPULAR -->
+
+    <div class="popular">
+      <div class="container">
+        <h1 class="pitch-title">Most Popular Countries</h1>
+        <div class="row">
+          <div class="col-3 col-3-active-1">
+            <img src="img/paris.jpg" />
+            <h2>France</h2>
+          </div>
+          <div class="col-3 col-3-active-2">
+            <img src="img/california.jpg" />
+            <h2>California</h2>
+          </div>
+          <div class="col-3 col-3-active-3">
+            <img src="img/dubai.jpg" />
+            <h2>Dubai</h2>
+          </div>
+        </div>
+        <h1 class="pitch-2">Ready To Travel?</h1>
+        <a href="" class="btn btn-2">Start Planing Your Trip</a>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col-1">
+            <img src="img/footer.png" />
+            <h2>ZMK</h2>
+          </div>
+          <div class="footer-col-2">
+            <ul>
+              <li><a href="">Home</a></li>
+              <li><a href="">About</a></li>
+              <li><a href="">Booking</a></li>
+              <li><a href="">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-col-3">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-instagram"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var navbar = document.getElementsByClassName("navbar");
+      var navlar = document.getElementById("navlar");
+      var alar = document.getElementById("alar");
+      var ular = document.getElementById("ular");
+      var ularu = document.getElementById("ularu");
+      var zmk = document.getElementById("zmk");
+      var zmktitle = document.getElementById("zmktitle");
+
+      function menutoggle() {
+        if (navlar.style.maxHeight == "0px") {
+          navlar.style.maxHeight = "400px";
+          alar.style.display = "block";
+          ular.style.display = "block";
+          zmk.style.display = "none";
+          zmktitle.style.display = "none";
+        } else {
+          navlar.style.maxHeight = "0px";
+          alar.style.display = "none";
+          ular.style.display = "none";
+          zmk.style.display = "block";
+          zmktitle.style.display = "block";
+        }
+      }
+    </script>
+  </body>
+</html>
