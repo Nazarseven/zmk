@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Zmk Tourizm</title>
+    <title>Zmk Tourism</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -24,9 +24,9 @@
       <div class="navbar">
         <nav class="nav-1" id="navlar">
           <ul id="ular">
-            <li><a href="">Home</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Our Tents</a></li>
+            <li><a href="" id="alarbir">Home</a></li>
+            <li><a href="" id="alarbir">About</a></li>
+            <li><a href="" id="alarbir">Our Tents</a></li>
           </ul>
         </nav>
         <nav class="nav-2" id="navlar">
@@ -153,7 +153,8 @@
       var ularu = document.getElementById("ularu");
       var zmk = document.getElementById("zmk");
       var zmktitle = document.getElementById("zmktitle");
-      
+      var alarbir = document.getElementById("alarbir");
+
       ular.style.display = "none";
 
       function menutoggle() {
@@ -163,12 +164,14 @@
           ular.style.display = "block";
           zmk.style.display = "none";
           zmktitle.style.display = "none";
+          alarbir.style.display = "none";
         } else {
           navlar.style.maxHeight = "0px";
           alar.style.display = "none";
           ular.style.display = "none";
           zmk.style.display = "block";
           zmktitle.style.display = "block";
+          alarbir.style.display = "block";
         }
       }
     </script>
